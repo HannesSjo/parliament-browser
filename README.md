@@ -1,9 +1,1 @@
-# parliament-browser
-Parliament browser app for the Cross-Platform course.
-
-Fork this repository and implement the new functionality.
-
-To run:
-1) Install dependencies: ```npm install```
-
-2) Start the app: ```npx expo start```
+Added new menu screen with Persons and Roles buttons. New Roles screen with all roles. And setup for finding people based on roles (not working).

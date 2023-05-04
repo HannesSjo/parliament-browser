@@ -15,6 +15,7 @@ import {
 } from "react-native";
 
 export const Details = ({ route }) => {
+  // Would add check for 
   useEffect(() => {
     const controller = new AbortController();
     fetchTasksWithIndicator(route.params.id, controller)

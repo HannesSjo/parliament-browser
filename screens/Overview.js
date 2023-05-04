@@ -3,15 +3,13 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { View, StyleSheet, FlatList, Alert } from "react-native";
 
-import mock from "../mock/persons.json";
-
 export const Overview = ({ navigation }) => {
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState(data);
 
   useEffect(() => {
-    axios
+      axios
       .get("https://api.lagtinget.ax/api/persons.json?state=1")
       .then((response) => {
         setData(response.data);
